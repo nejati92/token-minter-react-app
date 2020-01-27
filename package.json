@@ -3,18 +3,32 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.9.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.2.1",
+    "bootstrap": "^4.4.1",
+    "material-ui": "^0.20.2",
     "react": "^16.12.0",
+    "react-bootstrap-validation": "^0.1.11",
+    "react-copy-to-clipboard": "^5.0.2",
+    "react-csv": "^1.1.2",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.3.0"
+    "react-notifications": "^1.4.3",
+    "react-scripts": "3.3.0",
+    "react-toastify": "^5.5.0",
+    "react-tooltip": "^3.11.2",
+    "reactstrap": "^8.4.0",
+    "request-promise": "^4.2.5",
+    "validate-react": "^1.2.2",
+    "web3": "^1.2.5-rc.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "aws s3 sync build/ s3://coin-minter --acl public-read"
   },
   "eslintConfig": {
     "extends": "react-app"
