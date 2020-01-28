@@ -29,7 +29,7 @@ class ModalForm extends Component {
     let title = "";
 
     button = (
-      <Button color="success" onClick={this.toggle} style={{ float: "left", marginRight: "10px" }}>
+      <Button color="success" onClick={this.toggle} style={{ float: "left", marginRight: "10px", marginTop:"20px" }}>
         {label}
       </Button>
     );

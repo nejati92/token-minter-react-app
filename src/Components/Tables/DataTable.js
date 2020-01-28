@@ -31,9 +31,8 @@ class DataTable extends Component {
                           {item.id}
                       </TableCell>
                       <TableCell component="th" scope="row">
-                          {`${item.hash.substring(0, 4)}**${item.hash.substring( item.hash.length - 4, item.hash.length )}`}
-      
                           <p data-tip="Copy to clipboard">
+                              {`${item.hash.substring(0, 4)}**${item.hash.substring( item.hash.length - 4, item.hash.length )}`}
                               <CopyToClipboard text={item.hash} onCopy={this.onCopy}>
                                   <Button>
                                       <img src={ "./clipboard.png"} style={{ height: "19px", width: "15px", background: "transparent" }} />
@@ -55,8 +54,8 @@ class DataTable extends Component {
                           <p data-tip="Copy to clipboard">
                               {`${item.owner.substring(0, 4)}**${item.owner.substring( 40, 42 )}`}
                               <CopyToClipboard text={item.owner} onCopy={this.onCopy}>
-                                  <Button>
-                                      <img src={ "./clipboard.png"} style={{ height: "19px", width: "15px", background: "transparent" }} />
+                                  <Button style={ {outline:"none"}}>
+                                      <img src={ "./clipboard.png"} style={{height: "19px", width: "15px", background: "transparent" }} />
                                   </Button>
                               </CopyToClipboard>
                           </p>

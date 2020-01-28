@@ -10,23 +10,20 @@ class App extends Component {
   };
 
   errorNotification = (type) => {
-      debugger;
+
       if(type){
       console.info(type);
-      NotificationManager.error( '',type, 1000, () => {
-            alert("Invalid id, this is already exists");
+      NotificationManager.error('',type, 4000, () => {    
       });
       this.state.error = []
     }
   }
 
   happyNotification = (type)=>{
-      debugger;
       console.info(type);
       if(type)
       {
-      NotificationManager.success( '',"Transaction has been submitted", 1000, () => {
-            alert("Trnasaction to mint the tokens to your account has been submitted, An entry should appear on the table in showrtwhile, Follow the link to etherescan to see the status");
+      NotificationManager.success( '',"Transaction has been submitted", 4000, () => {
       });
       this.state.error = []
     }
@@ -84,7 +81,7 @@ class App extends Component {
         </Row>
         <Row>
           <Col>
-            <ModalForm buttonLabel="Mint Tokens" addItemToState={this.addItemToState} displayError={ this.displayError} />
+            <ModalForm buttonLabel="Mint Tokens" addItemToState={this.addItemToState} displayError={ this.displayError} style={{ marginTop: "20px" }} />
           </Col>
         </Row>
       <div>
