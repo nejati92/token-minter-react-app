@@ -25,7 +25,7 @@ class MintToken extends React.Component {
 
     var options = {
       method: "POST",
-      uri: "http://52.18.55.7:49160/token/mint",
+      uri: "http://localhost:8080/token/mint",
       body: {
         id: this.state.id,
         owner: this.state.owner
