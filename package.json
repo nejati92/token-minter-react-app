@@ -21,7 +21,7 @@
     "reactstrap": "^8.4.0",
     "request-promise": "^4.2.5",
     "validate-react": "^1.2.2",
-    "web3": "^1.2.5-rc.0"
+    "web3": "^4.16.0"
   },
   "scripts": {
     "start": "react-scripts start",
